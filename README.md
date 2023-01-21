@@ -32,5 +32,18 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 ![image](https://user-images.githubusercontent.com/112893464/213878318-8d982c06-f30e-4a26-be58-7f915da3fc9e.png)
 
 
+## Study Design: MechaCar vs Competition
+The stude 
 
+* What metric or metrics are you going to test?
+  - Fuel efficienies and Horsepower will be tested. 
+
+* What is the null hypothesis or alternative hypothesis?
+  - Null Hypothesis is that all of the cars in the same class have the same fuel efficienies/horsepower. The Alternative Hypothesis is that they are not all the same.
+
+* What statistical test would you use to test the hypothesis? And why?
+  - ANOVA would a good method to test the fuel efficienies andHorsepower. 
+
+* What data is needed to run the statistical test?
+  - Fuel efficiencies of over 100 cars from different types. The corresponding horepower data would also be required.
 
