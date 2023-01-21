@@ -1,4 +1,4 @@
-#Part 1-----------------------------------------------------------
+#Part 1 - add libariries-----------------------------------------------------------
 
 #load dplyr package
 library(dplyr)
@@ -13,7 +13,7 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AW
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data= MechaCar))
 
 
-#Part 2------------------------------------------------------------
+#Part 2 - Performing Linear Regression on MPG data------------------------------------------------------------
 #read file
 Suspension <- read.csv(file='Suspension_coil.csv',check.names=F,stringsAsFactors = F)
 
@@ -23,7 +23,7 @@ summarize_demo <- Suspension %>% summarize(Mean=mean(PSI),Median=(PSI),Variance=
 #create a lot summary
 lot_demo <- Suspension %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=(PSI),Variance=var(PSI),SD=sd(PSI))
 
-#Part 3 -----------------------------------------------------------
+#Part 3- T-tests on Suspension Coils-----------------------------------------------------------
 #perform t-test to determine if the PSI across 
 # Peform t-test across all Lots
 t.test(Suspension$PSI,mu = 1500)
